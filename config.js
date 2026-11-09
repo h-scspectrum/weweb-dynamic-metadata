@@ -1,13 +1,13 @@
 export const config = {
-  domainSource: "https://f69a71f6-9fd8-443b-a040-78beb5d404d4.weweb-preview.io", // Your WeWeb app preview link
+  domainSource: "https://www.listing.scspectrum.com/", // Your WeWeb app preview link
   patterns: [
       {
-          pattern: "/event/[^/]+",
-          metaDataEndpoint: "https://xeo6-2sgh-ehgj.n7.xano.io/api:8wD10mRd/event/{id}/meta"
+          pattern: "/advisor-profile/[^/]+/",
+          metaDataEndpoint: "https://api.scspectrum.com/api:zYtd8tQ9:v2/advisor/{uuid}/metadata"
       },
       {
-          pattern: "/team/profile/[^/]+",
-          metaDataEndpoint: "https://xeo6-2sgh-ehgj.n7.xano.io/api:LjwxezTv/team/profile/{profile_id}/meta"
+          pattern: "/facility/california/[^/]+/[^/]+/[^/]+",
+          metaDataEndpoint: "https://api.scspectrum.com/api:zYtd8tQ9:v2/facilities/metadata/{facilities_id}"
       }
       // Add more patterns and their metadata endpoints as needed
   ]
